@@ -1,6 +1,7 @@
 html {
    --top-spacing: 100px;
    scroll-padding-top: var(--top-spacing);
+   height: 100%;
 }
 
 *,
@@ -40,6 +41,7 @@ body {
    background-color: #E3DEFE;
    margin: 0;
    padding: 0;
+   height: 100%;
 }
 
 body._lock {
@@ -52,10 +54,16 @@ body._lock {
    padding: 0 15px;
 }
 
+// .main{
+//    min-height: 100%;
+//    display: flex;
+//    flex-direction: column;
+// }
+
 .title {
    color: #995EA8;
    font-weight: 800;
-   font-size: 56px;
+   font-size: 48px;
    text-align: center;
    font-family: "Raleway", sans-serif;
    span {
