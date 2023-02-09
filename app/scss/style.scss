@@ -55,8 +55,7 @@
    opacity: 0.7;
 }
 
-.home{
- 
+.home {
 }
 .video__bg {
    width: 100%;
@@ -81,7 +80,6 @@
    position: relative;
    position: absolute;
    margin-top: 50px;
-   
 }
 .home__left {
    width: 500px;
@@ -90,12 +88,30 @@
    font-size: 48px;
    font-weight: 800;
    line-height: 1;
-//    p {
-//     animation: move 5s ease-in-out infinite;
-//     &:nth-child(2) { animation-delay: 0.5s; }
-//     &:nth-child(3) { animation-delay: 1.0s; }
-//     &:nth-child(4) { animation-delay: 1.5s; }
-//   }
+   span {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      top: 0.1rem;
+      animation: 0.3s swift-up ease-in-out forwards;
+   }
+   span:nth-of-type(1) i {
+      animation-delay: 0.4s;
+   }
+
+   span:nth-of-type(2) i {
+      animation-delay: 0.8s;
+   }
+
+   span:nth-of-type(3) i {
+      animation-delay: 1.2s;
+   }
+   i {
+      font-style: normal;
+      position: relative;
+      top: 4rem;
+      animation: 0.5s swift-up ease-in-out forwards;
+   }
 }
 
 .home__right {
@@ -123,12 +139,10 @@
    background: url("../images/decor/line.png") no-repeat top right, url("../images/photo.jpg") no-repeat;
    background-size: 40%;
 }
-.container {
-}
 .about__text {
    max-width: 700px;
    margin-left: auto;
-   padding: 80px 0 300px 20px;
+   padding: 80px 0 45px 20px;
    font-family: "Raleway", sans-serif;
    font-size: 20px;
    font-weight: 700;
@@ -139,8 +153,78 @@
 .title {
 }
 ul.about__text-point {
+   border: 1px solid $green;
+   border-radius: 5%;
+   margin-top: 50px;
+   padding: 30px 30px;
    li {
       list-style: disc;
+   }
+}
+
+.service {
+   background: url("../images/decor/bubble.png") left no-repeat, $white;
+   background-size: cover;
+}
+.container {
+}
+.service__title {
+   margin-bottom: 90px;
+   padding-top: 90px;
+}
+.title {
+}
+.service__inner {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 90px;
+}
+.service__item {
+   text-align: center;
+   width: 360px;
+   background-color: $white;
+   box-shadow: 0px 0px 20px 0px rgba(163, 111, 176, 1);
+   border-radius: 25px;
+   padding: 30px 40px;
+   margin-bottom: 90px;
+}
+.sevice__item-title {
+   color: $title;
+   font-weight: 500;
+   font-size: 28px;
+   margin-bottom: 30px;
+}
+.service__item-text {
+   color: $text;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.service__coach {
+   background: 
+      url(../images/decor/lavrright.png) right 0% no-repeat, url(../images/decor/circle.png) 25% 5% no-repeat,
+      $lavender;
+   background-size:  20%, 15%;
+   .service__title {
+   }
+   .service__inner {
+   }
+   .service__item {
+      color: $text;
+      background-color: #d0c4f2;
+      box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.5);
+      padding: 30px 25px 140px;
+      z-index: 0;
+   }
+   .sevice__item-title {
+      color: $text;
+      font-size: 24px;
+      font-family: "Raleway";
+      font-weight: 800;
+      margin-bottom: 60px;
+   }
+   .service__item-text {
    }
 }
 
