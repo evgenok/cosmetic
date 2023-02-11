@@ -1,22 +1,24 @@
 .section__slider {
-   padding-top: 90px;
+   padding: 90px 0;
    display: flex;
    justify-content: center;
    align-items: center;
+   background: url('../images/decor/clover1.png') right top no-repeat ,url('../images/decor/clover2.png') left center no-repeat,url('../images/decor/leavs.png') right bottom no-repeat #f0f0f0;
+   background-size: 30%, 30%,30%;
 }
 .slider {
    position: relative;
 }
 .slider__img-1 {
-   width: 575px;
-   height: 415px;
+   width: 780px;
+   height: 550px;
    img {
       max-width: 100%;
    }
 }
 .slider__img-2 {
-   height: 615x;
-   width: 460px;
+   height: 784px;
+   width: 555px;
    img {
       max-width: 100%;
    }
@@ -48,7 +50,7 @@
 
 .slider .prev:hover,
 .slider .next:hover {
-   color: rgba(243, 103, 32, 1);
+   color: #8c7ace;
    background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -62,7 +64,7 @@
    height: 12px;
    width: 12px;
    margin: 0 2px;
-   background-color: rgba(243, 103, 32, 0.5);
+   background-color: #E3DEFE;
    border-radius: 50%;
    display: inline-block;
    transition: background-color 0.6s ease;
@@ -70,7 +72,7 @@
 
 .active,
 .slider-dots_item:hover {
-   background-color: rgba(243, 103, 32, 1);
+   background-color: #8c7ace;
 }
 
 /* Анимация слайдов */

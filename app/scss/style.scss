@@ -34,7 +34,6 @@
 }
 .btn {
    cursor: pointer;
-   border: none;
    background-color: $gold;
    width: 170px;
    height: 55px;
@@ -47,7 +46,10 @@
    box-shadow: 0px 3px 3px 0px rgba(63, 44, 68, 0.5);
    transition: all 0.2s linear;
    border: 1px solid $purple;
+   transition: all 0.4s linear;
    &:hover {
+      background-color: $purple;
+      color: $gold;
       box-shadow: 0px 5px 3px 0px rgba(63, 44, 68, 0.5);
    }
 }
@@ -55,8 +57,6 @@
    opacity: 0.7;
 }
 
-.home {
-}
 .video__bg {
    width: 100%;
    position: relative;
@@ -148,10 +148,6 @@
    font-weight: 700;
    line-height: 2;
 }
-.about__text-title {
-}
-.title {
-}
 ul.about__text-point {
    border: 1px solid $green;
    border-radius: 5%;
@@ -166,13 +162,9 @@ ul.about__text-point {
    background: url("../images/decor/bubble.png") left no-repeat, $white;
    background-size: cover;
 }
-.container {
-}
 .service__title {
    margin-bottom: 90px;
    padding-top: 90px;
-}
-.title {
 }
 .service__inner {
    display: flex;
@@ -188,6 +180,11 @@ ul.about__text-point {
    border-radius: 25px;
    padding: 30px 40px;
    margin-bottom: 90px;
+   transform: scale(1);
+   transition: all 0.2s ease;
+   &:hover {
+      transform: scale(0.9);
+   }
 }
 .sevice__item-title {
    color: $title;
@@ -202,20 +199,20 @@ ul.about__text-point {
 }
 
 .service__coach {
-   background: 
-      url(../images/decor/lavrright.png) right 0% no-repeat, url(../images/decor/circle.png) 25% 5% no-repeat,
+   background: url(../images/decor/lavrright.png) right 0% no-repeat, url(../images/decor/circle.png) 25% 5% no-repeat,
       $lavender;
-   background-size:  20%, 15%;
-   .service__title {
-   }
-   .service__inner {
-   }
+   background-size: 20%, 15%;
    .service__item {
       color: $text;
       background-color: #d0c4f2;
       box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.5);
       padding: 30px 25px 140px;
       z-index: 0;
+      transform: scale(1);
+      transition: all 0.2s ease;
+      &:hover {
+         transform: scale(1.1);
+      }
    }
    .sevice__item-title {
       color: $text;
@@ -224,8 +221,77 @@ ul.about__text-point {
       font-weight: 800;
       margin-bottom: 60px;
    }
-   .service__item-text {
+}
+
+.cooperation {
+   background: url("../images/decor/pearls.jpg") no-repeat;
+   background-size: cover;
+   padding: 80px;
+   text-align: center;
+   background-attachment: fixed;
+}
+.cooperation__title {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 680px;
+   margin: 0 auto;
+   color: $purple;
+}
+.cooperation__btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 360px;
+   height: 80px;
+   background-color: $gold;
+   border-radius: 60px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   color: $purple;
+   cursor: pointer;
+   font-size: 24px;
+   line-height: 2.2;
+   font-weight: 700;
+   box-shadow: 0px 3px 3px 0px rgba(63, 44, 68, 0.5);
+   transition: all 0.2s linear;
+   border: 1px solid $purple;
+   &:hover {
+      box-shadow: 0px 5px 3px 0px rgba(63, 44, 68, 0.5);
+      background-color: $purple;
+      color: $gold;
    }
+}
+
+.footer {
+   background-color: $purple;
+}
+.footer__inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 25px;
+}
+.footer__copy {
+   color: $lavender;
+   font-size: 22px;
+}
+.footer__social {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   a:hover{
+      animation-name: bounce;
+      transform-origin: center center;
+      animation-duration: 0.8s;
+      animation-fill-mode: both;
+   }
+}
+.footer__social-whatsapp {
+   margin: 0 15px; 
+   
 }
 
 @import "media";
