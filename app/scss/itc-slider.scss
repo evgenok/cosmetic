@@ -3,11 +3,30 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background: url('../images/decor/clover1.png') right top no-repeat ,url('../images/decor/clover2.png') left center no-repeat,url('../images/decor/leavs.png') right bottom no-repeat #f0f0f0;
-   background-size: 30%, 30%,30%;
+   background: url("../images/decor/clover1.png") right top no-repeat,
+      url("../images/decor/clover2.png") left center no-repeat,
+      url("../images/decor/leavs.png") right bottom no-repeat #f0f0f0;
+   background-size: 30%, 30%, 30%;
+}
+.work__slider {
+   background: rgb(140, 122, 206);
+   background: url("../images/decor/lavrright.png") right bottom no-repeat,
+      url("../images/decor/lavrleft.png") left bottom no-repeat,
+      linear-gradient(
+         180deg,
+         rgba(140, 122, 206, 1) 4%,
+         rgba(182, 166, 237, 1) 20%,
+         rgba(227, 222, 254, 1) 50%,
+         rgba(182, 166, 237, 1) 80%,
+         rgba(140, 122, 206, 1) 96%
+      );
+   background-size: 50%;
 }
 .slider {
    position: relative;
+}
+.work__slider {
+   padding: 0 0 30px 0;
 }
 .slider__img-1 {
    width: 780px;
@@ -19,6 +38,20 @@
 .slider__img-2 {
    height: 784px;
    width: 555px;
+   img {
+      max-width: 100%;
+   }
+}
+.work-slider__img-1 {
+   width: 780px;
+   height: 550px;
+   img {
+      max-width: 100%;
+   }
+}
+.work-slider__img-2 {
+   width: 780px;
+   height: 690px;
    img {
       max-width: 100%;
    }
@@ -64,7 +97,7 @@
    height: 12px;
    width: 12px;
    margin: 0 2px;
-   background-color: #E3DEFE;
+   background-color: #e3defe;
    border-radius: 50%;
    display: inline-block;
    transition: background-color 0.6s ease;
@@ -73,6 +106,13 @@
 .active,
 .slider-dots_item:hover {
    background-color: #8c7ace;
+}
+.slider-dots-work {
+   background-color: #f0f0f0;
+   &.active,
+   &:hover {
+      background-color: #edc96c;
+   }
 }
 
 /* Анимация слайдов */
