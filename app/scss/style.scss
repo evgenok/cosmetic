@@ -307,6 +307,45 @@ ul.about__text-point {
    height: 770px;
 }
 
+.collage__inner {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.collage__item {
+   width: 25%;
+   height: 300px;
+   overflow: hidden;
+   position: relative;
+   border-bottom: 1px solid white;
+   border-right: 1px solid white;
+}
+.collage__tone {
+   z-index: 2;
+   opacity: 1;
+   transition: opacity 0.2s linear;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   &:hover {
+      opacity: 0;
+   }
+}
+.collage__img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate3d(-50%, -50%, 0);
+   z-index: 1;
+   min-width: 100%;
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+}
+
 .footer {
    background-color: $purple;
 }

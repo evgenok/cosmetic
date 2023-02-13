@@ -38,7 +38,7 @@ body {
    font-size: 24px;
    line-height: 1.5;
    font-weight: 400;
-   background-color: #E3DEFE;
+   background-color: #e3defe;
    margin: 0;
    padding: 0;
    height: 100%;
@@ -59,9 +59,32 @@ body._lock {
 //    display: flex;
 //    flex-direction: column;
 // }
+.up {
+   position: fixed;
+   bottom: 700px;
+   right: 40px;
+   width: 64px;
+   height: 64px;
+   z-index: 1;
+   cursor: pointer;
+   visibility: hidden;
+   background: url("../images/icons/up.svg");
+   background-size: cover;
+   opacity: 0;
+   transition: 0.5s;
+   transform: scale(1);
+   &:hover {
+      transform: scale(1.1);
+   }
+}
+.up.active {
+   opacity: 1;
+   visibility: visible;
+   bottom: 40px;
+}
 
 .title {
-   color: #995EA8;
+   color: #995ea8;
    font-weight: 800;
    font-size: 48px;
    text-align: center;
