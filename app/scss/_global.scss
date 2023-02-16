@@ -54,18 +54,18 @@ body._lock {
    padding: 0 15px;
 }
 
-// .main{
-//    min-height: 100%;
-//    display: flex;
-//    flex-direction: column;
-// }
+.main {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
 .up {
    position: fixed;
    bottom: 700px;
    right: 40px;
    width: 64px;
    height: 64px;
-   z-index: 1;
+   z-index: 5;
    cursor: pointer;
    visibility: hidden;
    background: url("../images/icons/up.svg");

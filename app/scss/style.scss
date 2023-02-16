@@ -213,7 +213,7 @@ ul.about__text-point {
       color: $text;
       background-color: #d0c4f2;
       box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.5);
-      padding: 30px 25px 140px;
+      padding: 30px 25px 60px;
       z-index: 0;
       transform: scale(1);
       transition: all 0.2s ease;
@@ -233,7 +233,7 @@ ul.about__text-point {
 .cooperation {
    background: url("../images/decor/pearls.jpg") no-repeat;
    background-size: cover;
-   padding: 80px;
+   padding: 50px;
    text-align: center;
    background-attachment: fixed;
 }
@@ -243,7 +243,7 @@ ul.about__text-point {
    align-items: center;
    justify-content: center;
    width: 680px;
-   margin: 0 auto;
+   margin: 20px auto;
    color: $purple;
 }
 .cooperation__btn {
@@ -271,6 +271,19 @@ ul.about__text-point {
    }
 }
 
+.section__video1 {
+}
+.video1__inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 70px 0px;
+}
+.video1__item {
+
+}
+
 .bread {
    font-size: 18px;
    color: $gold;
@@ -295,13 +308,13 @@ ul.about__text-point {
       rgba(209, 191, 231, 1) 33%,
       rgba(207, 177, 236, 1) 40%,
       rgba(203, 165, 236, 1) 50%,
-      rgba(188, 143, 226, 1) 69%,
-      rgba(175, 133, 209, 1) 88%,
-      rgba(140, 122, 206, 1) 96%
+      rgb(214, 184, 239) 69%,
+      rgba(225, 217, 246, 1) 90%,
+      rgb(227, 222, 254, 1) 96%
    );
 }
 .orbite__inner {
-   background: url("../images/decor/orbite.jpg") center no-repeat;
+   background: url("../images/decor/orbite.jpg") right no-repeat;
    background-size: contain;
    width: 100%;
    height: 770px;
@@ -344,6 +357,58 @@ ul.about__text-point {
    width: 300px;
    height: 300px;
    object-fit: cover;
+}
+
+.section__reviews-1,
+.section__reviews-3 {
+   background: #fff;
+   position: relative;
+   height: 90vh;
+   img {
+      max-width: 800px;
+      width: 100%;
+      height: inherit;
+      object-fit: contain;
+   }
+}
+.reviews__inner-1 {
+   right: 0px;
+   top: 0px;
+   position: absolute;
+   max-width: 700px;
+   margin-left: auto;
+   font-family: "Raleway", sans-serif;
+   padding: 0px 50px 50px 20px;
+}
+.section__reviews-2 {
+   background: #f7f7f7;
+   position: relative;
+   height: 90vh;
+   img {
+      max-width: 600px;
+      width: 100%;
+      height: inherit;
+      object-fit: contain;
+   }
+}
+.reviews__inner-2 {
+   max-width: 700px;
+   margin-right: auto;
+   font-family: "Raleway", sans-serif;
+   padding: 0 20px 40px 10px;
+   .reviews__inner-video {
+      padding: 50px 0 0 50px;
+      width: 40%;
+   }
+}
+
+.video3 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 50px 0 90px;
+}
+.container {
 }
 
 .footer {
