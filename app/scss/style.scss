@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "keyframes";
+@import "work__slider";
 
 .header {
    max-width: 100%;
@@ -272,16 +273,18 @@ ul.about__text-point {
 }
 
 .section__video1 {
+   background: rgb(255, 255, 255);
+   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%);
 }
 .video1__inner {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    flex-wrap: wrap;
    padding: 70px 0px;
 }
 .video1__item {
-
+   padding: 0 10px;
 }
 
 .bread {
@@ -297,27 +300,18 @@ ul.about__text-point {
    }
 }
 
-.orbite {
-   padding: 90px;
-   background: rgb(240, 240, 240);
-   background: linear-gradient(
-      180deg,
-      rgba(240, 240, 240, 1) 4%,
-      rgba(225, 217, 246, 1) 10%,
-      rgba(220, 205, 242, 1) 22%,
-      rgba(209, 191, 231, 1) 33%,
-      rgba(207, 177, 236, 1) 40%,
-      rgba(203, 165, 236, 1) 50%,
-      rgb(214, 184, 239) 69%,
-      rgba(225, 217, 246, 1) 90%,
-      rgb(227, 222, 254, 1) 96%
-   );
+.section__slick {
+   padding: 90px 0;
 }
-.orbite__inner {
-   background: url("../images/decor/orbite.jpg") right no-repeat;
-   background-size: contain;
-   width: 100%;
-   height: 770px;
+.slick__img {
+   width: 200px;
+   height: 200px;
+   img {
+      max-width: 200px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+   }
 }
 
 .collage__inner {
@@ -403,12 +397,13 @@ ul.about__text-point {
 }
 
 .video3 {
+   background: rgb(227, 222, 254);
+   background: linear-gradient(180deg, rgba(227, 222, 254, 1) 0%, rgba(140, 122, 206, 1) 100%);
+   border-bottom: 3px solid $lavender;
    display: flex;
    align-items: center;
    justify-content: center;
    padding: 50px 0 90px;
-}
-.container {
 }
 
 .footer {
