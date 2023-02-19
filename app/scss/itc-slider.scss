@@ -43,20 +43,6 @@
       max-width: 100%;
    }
 }
-// .work-slider__img-1 {
-//    width: 780px;
-//    height: 550px;
-//    img {
-//       max-width: 100%;
-//    }
-// }
-// .work-slider__img-2 {
-//    width: 780px;
-//    height: 690px;
-//    img {
-//       max-width: 100%;
-//    }
-// }
 
 /* Кнопки вперед и назад */
 .slider .prev,
@@ -92,6 +78,11 @@
 
 .slider-dots {
    text-align: center;
+   display: flex;
+   text-align: center;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: space-between;
 }
 .slider-dots_item {
    cursor: pointer;

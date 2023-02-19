@@ -1,0 +1,246 @@
+@media (max-width: 1230px) {
+}
+@media (max-width: 1000px) {
+   ul.menu__list {
+      display: none;
+      display: block;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      padding: 20px 0;
+      transform: translateX(-200%);
+      transition: all 0.7s;
+      z-index: 2;
+      align-items: center;
+      text-align: center;
+      background-color: #8c7ace;
+      height: auto;
+   }
+   .menu__list._active {
+      transform: translateX(0);
+   }
+   .menu__list-btn {
+      z-index: 5;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      margin-left: 10px;
+   }
+   .menu__list-btn span,
+   .menu__list-btn::after,
+   .menu__list-btn::before {
+      left: 0;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #efefef;
+   }
+   .menu__list-btn::before,
+   .menu__list-btn::after {
+      content: "";
+   }
+   .menu__list-btn::after {
+      bottom: 0;
+   }
+   .menu__list-btn::before {
+      top: 0;
+   }
+   .menu__list-btn span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+   }
+   .menu__list-btn._active span {
+      transform: scale(0) translate(0px, -50%);
+   }
+   .menu__list-btn._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+   }
+   .menu__list-btn._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 100%);
+   }
+   .menu__list-item {
+      padding: 20px 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+   }
+   .collage__item {
+      width: 25%;
+      height: 180px;
+   }
+}
+
+@media (max-width: 850px) {
+   .service__item {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+   }
+   .cooperation__title {
+      width: 100%;
+   }
+   .video3 {
+      padding-bottom: 40px;
+      iframe {
+         width: 580px;
+         height: 500px;
+      }
+   }
+   .service__item-title {
+      padding-top: 30px;
+   }
+   .service__title {
+      padding-top: 30px;
+   }
+   .service__coach .service__item-title {
+      margin-bottom: 30px;
+   }
+   .footer__inner {
+      flex-direction: column;
+   }
+   .btn {
+      margin: 20px 0;
+      width: 350px;
+      height: 80px;
+      line-height: 2.4;
+      border-radius: 50px;
+      font-size: 32px;
+   }
+   .section__slider {
+      padding: 40px 0;
+   }
+   .slider__img-1 {
+      width: 650px;
+      height: 550px;
+   }
+   .slider__img-2 {
+      height: 680px;
+   }
+}
+
+@media (max-width: 730px) {
+   .cooperation__title {
+      font-size: 28px;
+   }
+   .slider__img-1 {
+      width: 550px;
+      height: 450px;
+   }
+   .slider__img-2 {
+      height: 630px;
+   }
+   .reviews__inner-1 {
+      padding: 0 15px 0 15px;
+      iframe {
+         width: 480px;
+         height: 580px;
+      }
+   }
+}
+@media (max-width: 600px) {
+   .cooperation {
+      padding: 25px;
+   }
+   .cooperation__title {
+      font-size: 25px;
+   }
+   .cooperation__btn {
+      width: 100%;
+      font-size: 30px;
+   }
+   .title {
+      font-size: 32px;
+   }
+   .video1__item {
+      iframe {
+         width: 400px;
+         height: 450px;
+      }
+   }
+   .collage__item {
+      width: 50%;
+      height: 200px;
+   }
+   .video3 {
+      iframe {
+         width: 480px;
+         height: 400px;
+      }
+   }
+   .slider__img-1 {
+      width: 450px;
+      height: 420px;
+   }
+   .slider__img-2 {
+      height: 630px;
+   }
+   .reviews__inner-1 {
+      padding: 0 10px 0 10px;
+      iframe {
+         width: 400px;
+         height: 470px;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   .footer__copy {
+      font-size: 18px;
+      text-align: center;
+   }
+   .btn {
+      width: 100%;
+   }
+}
+
+@media (max-width: 440px) {
+   .video1__item {
+      iframe {
+         width: 360px;
+         height: 400px;
+      }
+   }
+   .video3 {
+      iframe {
+         width: 360px;
+         height: 330px;
+      }
+   }
+   .title {
+      font-size: 20px;
+      margin: 0;
+      padding: 30px 0;
+   }
+   .service__inner {
+      margin: 0;
+   }
+   .service__item-title {
+      font-size: 20px;
+   }
+   .service__item-text {
+      font-size: 16px;
+   }
+   .reviews__inner-1 {
+      padding: 0 10px 0 -10px;
+      iframe {
+         width: 360px;
+         height: 430px;
+      }
+   }
+}
+
+@media (max-width: 400px) {
+   .reviews__inner-1 {
+      padding: 0 5px 0 -5px;
+      iframe {
+         width: 330px;
+         height: 400px;
+      }
+   }
+}
