@@ -131,7 +131,7 @@ function myFunction() {
 
 const iconMenu = document.querySelector('.menu__list-btn');
 const menuBody = document.querySelector('.menu__list');
-if (iconMenu) {
+if (iconMenu !== null) {
 
    iconMenu.addEventListener("click", function (e) {
       document.body.classList.toggle('_lock');

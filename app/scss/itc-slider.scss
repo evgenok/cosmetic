@@ -8,27 +8,10 @@
       url("../images/decor/leavs.png") right bottom no-repeat #f0f0f0;
    background-size: 30%, 30%, 30%;
 }
-
-// .work__slider {
-//    background: rgb(140, 122, 206);
-//    background: url("../images/decor/lavrright.png") right bottom no-repeat,
-//       url("../images/decor/lavrleft.png") left bottom no-repeat,
-//       linear-gradient(
-//          180deg,
-//          rgba(140, 122, 206, 1) 4%,
-//          rgba(182, 166, 237, 1) 20%,
-//          rgba(227, 222, 254, 1) 50%,
-//          rgba(182, 166, 237, 1) 80%,
-//          rgba(140, 122, 206, 1) 96%
-//       );
-//    background-size: 50%;
-// }
 .slider {
    position: relative;
 }
-// .work__slider {
-//    padding: 0 0 30px 0;
-// }
+
 .slider__img-1 {
    width: 780px;
    height: 550px;
@@ -110,6 +93,7 @@
 /* Анимация слайдов */
 
 .slider .item {
+   display: block;
    -webkit-animation-name: fade;
    -webkit-animation-duration: 1.5s;
    animation-name: fade;
