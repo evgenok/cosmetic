@@ -75,7 +75,6 @@
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   width: 1200px;
    position: relative;
    position: absolute;
    margin-top: 50px;
@@ -115,7 +114,7 @@
 
 .home__right {
    padding-left: 100px;
-   width: 700px;
+   max-width: 700px;
    color: $lavender;
 }
 .home__left-1 {
@@ -298,9 +297,6 @@ ul.about__text-point {
    justify-content: center;
    flex-wrap: wrap;
    padding: 70px 0px;
-}
-.video1__item {
-   padding: 0 10px;
 }
 
 .bread {

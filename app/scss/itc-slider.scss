@@ -65,13 +65,13 @@
    text-align: center;
    flex-wrap: wrap;
    align-content: center;
-   justify-content: space-between;
+   justify-content: center;
 }
 .slider-dots_item {
    cursor: pointer;
    height: 12px;
    width: 12px;
-   margin: 0 2px;
+   margin: 5px 2px;
    background-color: #e3defe;
    border-radius: 50%;
    display: inline-block;
