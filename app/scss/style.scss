@@ -295,8 +295,11 @@ ul.about__text-point {
    display: flex;
    align-items: center;
    justify-content: center;
-   flex-wrap: wrap;
+   flex-direction: column;
    padding: 70px 0px;
+}
+.video1__item {
+   margin-bottom: 10px;
 }
 
 .bread {
@@ -447,6 +450,28 @@ ul.about__text-point {
 }
 .footer__social-whatsapp {
    margin: 0 15px;
+}
+.to-play {
+   padding: 120px 200px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: all 0.3s linear;
+   &.removed {
+      visibility: hidden;
+      opacity: 0;
+   }
+   &:hover {
+      img {
+         opacity: 0.5;
+      }
+   }
+   img {
+      width: 100px;
+   }
 }
 
 @import "media";

@@ -1,6 +1,13 @@
 "use strict"
 
-
+window.addEventListener(
+   'scroll',
+   () =>
+      setTimeout(() => {
+         //insert marketing snippets here
+      }, 1000),
+   { once: true }
+);
 // -------------device-------------
 
 const isMobile = {
@@ -172,4 +179,7 @@ function scrollTopTop() {
       behavior: "smooth"
    })
 }
+
+
+
 

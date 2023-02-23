@@ -5,11 +5,15 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Посетите наш блог и узнайте о лучших местах для отдыха всей семьей в других странах. Климат, достопримечательности, фото, развлечения...">
+   <meta name="keywords" content="косметология, красота, здоровье, кожа, акне, массаж, лечение,">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;700;800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
+
    <title>Косметолог - Татьяна Попова</title>
 
    <link rel="stylesheet" href="css/itc-slider.min.css">
@@ -51,7 +55,7 @@
    <main class="main">
       <section class="home">
          <div class="video__bg">
-            <video autoplay loop muted preload="auto" poster="" src="images/video1.mp4"></video>
+            <video autoplay loop muted playsinline preload="none" poster="" src="images/video1.mp4"></video>
             <div class="container">
                <div class="home__text">
                   <div class="home__left">
@@ -167,20 +171,22 @@
       </section>
 
       <section class="section__video1">
+         <div class="container">
             <div class="video1__inner">
-               <div class="video1__item"><iframe width="550" height="500"
-                     src="https://youtube.com/embed/iq5fqbO2FFY?feature=share" title="YouTube video player"
-                     frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                     allowfullscreen></iframe>
+               <div id="player1" class="video1__item">
+                  <div class="to-play" data-id="player1" data-video="iq5fqbO2FFY"
+                     style="background: url('https://img.youtube.com/vi/iq5fqbO2FFY/sddefault.jpg') no-repeat center;">
+                     <img src="images/icons/play.svg" alt="" class="play__img">
+                  </div>
                </div>
-               <div class="video1__item"><iframe width="550" height="500"
-                     src="https://youtube.com/embed/6tHzVlClIHs?feature=share" title="YouTube video player"
-                     frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                     allowfullscreen></iframe>
+               <div id="player2" class="video1__item">
+                  <div class="to-play" data-id="player2" data-video="6tHzVlClIHs"
+                     style="background: url('https://img.youtube.com/vi/6tHzVlClIHs/sddefault.jpg') no-repeat center;">
+                     <img src="images/icons/play.svg" alt="" class="play__img">
+                  </div>
                </div>
             </div>
+         </div>
       </section>
 
       <section class="section__slider" id="skills">
@@ -188,111 +194,111 @@
             <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="5000">
                <div class="item">
                   <a href="images/sertificate/1.jpg" style="cursor: zoom-in;" data-lightbox="image-1"><img
-                        class="slider__img-1" src="images/sertificate/1.jpg" alt="Первый слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/1.jpg" alt="Первый слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/2.jpg" style="cursor: zoom-in;" data-lightbox="image-2"><img
-                        class="slider__img-1" src="images/sertificate/2.jpg" alt="Второй слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/2.jpg" alt="Второй слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/3.jpg" style="cursor: zoom-in;" data-lightbox="image-3"><img
-                        class="slider__img-1" src="images/sertificate/3.jpg" alt="Третий слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/3.jpg" alt="Третий слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/4.jpg" style="cursor: zoom-in;" data-lightbox="image-4"><img
-                        class="slider__img-1" src="images/sertificate/4.jpg" alt="Четвертый слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/4.jpg" alt="Четвертый слайд"></a>
                </div>
                <div class="item ">
                   <a href="images/sertificate/5.jpg" style="cursor: zoom-in;" data-lightbox="image-5"><img
-                        class="slider__img-2" src="images/sertificate/5.jpg" alt="Пятый слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/5.jpg" alt="Пятый слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/6.jpg" style="cursor: zoom-in;" data-lightbox="image-6"><img
-                        class="slider__img-2" src="images/sertificate/6.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/6.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/7.jpg" style="cursor: zoom-in;" data-lightbox="image-7"><img
-                        class="slider__img-1" src="images/sertificate/7.jpg" alt="Седьмой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/7.jpg" alt="Седьмой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/8.jpg" style="cursor: zoom-in;" data-lightbox="image-8"><img
-                        class="slider__img-1" src="images/sertificate/8.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/8.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/9.jpg" style="cursor: zoom-in;" data-lightbox="image-9"><img
-                        class="slider__img-1" src="images/sertificate/9.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/9.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/10.jpg" style="cursor: zoom-in;" data-lightbox="image-10"><img
-                        class="slider__img-1" src="images/sertificate/10.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/10.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/11.jpg" style="cursor: zoom-in;" data-lightbox="image-11"><img
-                        class="slider__img-1" src="images/sertificate/11.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/11.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/12.jpg" style="cursor: zoom-in;" data-lightbox="image-12"><img
-                        class="slider__img-2" src="images/sertificate/12.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/12.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/13.jpg" style="cursor: zoom-in;" data-lightbox="image-13"><img
-                        class="slider__img-1" src="images/sertificate/13.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/13.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/14.jpg" style="cursor: zoom-in;" data-lightbox="image-14"><img
-                        class="slider__img-1" src="images/sertificate/14.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/14.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/15.jpg" style="cursor: zoom-in;" data-lightbox="image-15"><img
-                        class="slider__img-1" src="images/sertificate/15.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/15.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/16.jpg" style="cursor: zoom-in;" data-lightbox="image-16"><img
-                        class="slider__img-2" src="images/sertificate/16.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/16.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/17.jpg" style="cursor: zoom-in;" data-lightbox="image-17"><img
-                        class="slider__img-2" src="images/sertificate/17.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/17.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/18.jpg" style="cursor: zoom-in;" data-lightbox="image-18"><img
-                        class="slider__img-1" src="images/sertificate/18.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/18.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/19.jpg" style="cursor: zoom-in;" data-lightbox="image-19"><img
-                        class="slider__img-1" src="images/sertificate/19.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/19.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/20.jpg" style="cursor: zoom-in;" data-lightbox="image-20"><img
-                        class="slider__img-1" src="images/sertificate/20.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/20.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/21.jpg" style="cursor: zoom-in;" data-lightbox="image-21"><img
-                        class="slider__img-1" src="images/sertificate/21.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/21.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/22.jpg" style="cursor: zoom-in;" data-lightbox="image-22"><img
-                        class="slider__img-1" src="images/sertificate/22.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/22.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/23.jpg" style="cursor: zoom-in;" data-lightbox="image-23"><img
-                        class="slider__img-2" src="images/sertificate/23.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/23.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/24.jpg" style="cursor: zoom-in;" data-lightbox="image-24"><img
-                        class="slider__img-1" src="images/sertificate/24.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/24.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/25.jpg" style="cursor: zoom-in;" data-lightbox="image-25"><img
-                        class="slider__img-1" src="images/sertificate/25.jpg" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/25.jpg" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/26.png" style="cursor: zoom-in;" data-lightbox="image-26"><img
-                        class="slider__img-2" src="images/sertificate/26.png" alt="Шестой слайд"></a>
+                        class="slider__img-2" loading="lazy" src="images/sertificate/26.png" alt="Шестой слайд"></a>
                </div>
                <div class="item">
                   <a href="images/sertificate/27.png" style="cursor: zoom-in;" data-lightbox="image-27"><img
-                        class="slider__img-1" src="images/sertificate/27.png" alt="Шестой слайд"></a>
+                        class="slider__img-1" loading="lazy" src="images/sertificate/27.png" alt="Шестой слайд"></a>
                </div>
                <a class="prev" onclick="minusSlide()">&#10094;</a>
                <a class="next" onclick="plusSlide()">&#10095;</a>
@@ -333,52 +339,52 @@
       <section class="section__slick" id="work">
          <div class="slick">
             <a style="cursor: zoom-in;" data-lightbox="image-1" href="images/work/1.jpg">
-               <img class="slick__img" src="images/work/1.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/1.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-2" href="images/work/2.jpg">
-               <img class="slick__img" src="images/work/2.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/2.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-3" href="images/work/3.jpg">
-               <img class="slick__img" src="images/work/3.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/3.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-4" href="images/work/4.jpg">
-               <img class="slick__img" src="images/work/4.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/4.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-5" href="images/work/5.jpg">
-               <img class="slick__img" src="images/work/5.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/5.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-6" href="images/work/6.jpg">
-               <img class="slick__img" src="images/work/6.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/6.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-7" href="images/work/7.jpg">
-               <img class="slick__img" src="images/work/7.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/7.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-8" href="images/work/8.jpg">
-               <img class="slick__img" src="images/work/8.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/8.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-9" href="images/work/9.jpg">
-               <img class="slick__img" src="images/work/9.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/9.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-10" href="images/work/10.jpg">
-               <img class="slick__img" src="images/work/10.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/10.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-11" href="images/work/11.jpg">
-               <img class="slick__img" src="images/work/11.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/11.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-12" href="images/work/13.jpg">
-               <img class="slick__img" src="images/work/13.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/13.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-13" href="images/work/14.jpg">
-               <img class="slick__img" src="images/work/14.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/14.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-14" href="images/work/15.jpg">
-               <img class="slick__img" src="images/work/15.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/15.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-15" href="images/work/16.jpg">
-               <img class="slick__img" src="images/work/16.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/16.jpg" alt="">
             </a>
             <a style="cursor: zoom-in;" data-lightbox="image-16" href="images/work/17.jpg">
-               <img class="slick__img" src="images/work/17.jpg" alt="">
+               <img class="slick__img" loading="lazy" src="images/work/17.jpg" alt="">
             </a>
          </div>
       </section>
@@ -387,44 +393,46 @@
          <div class="collage__inner">
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/1.jpg" alt="" class="collage__img">
+               <img src="images/decor/1.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/2.jpg" alt="" class="collage__img">
+               <img src="images/decor/2.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/3.jpg" alt="" class="collage__img">
+               <img src="images/decor/3.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/9.jpg" alt="" class="collage__img">
+               <img src="images/decor/9.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/8.jpg" alt="" class="collage__img">
+               <img src="images/decor/8.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/6.jpg" alt="" class="collage__img">
+               <img src="images/decor/6.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/7.jpg" alt="" class="collage__img">
+               <img src="images/decor/7.jpg" alt="" class="collage__img" loading="lazy">
             </div>
             <div class="collage__item">
                <div class="collage__tone"></div>
-               <img src="images/decor/5.jpg" alt="" class="collage__img">
+               <img src="images/decor/5.jpg" alt="" class="collage__img" loading="lazy">
             </div>
          </div>
       </section>
 
       <section class="video3">
-            <iframe width="750" height="520" src="https://www.youtube.com/embed/-rSXZjYUgKA"
-               title="YouTube video player" frameborder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-               allowfullscreen></iframe>
+         <div id="player3">
+            <div class="to-play" data-id="player3" data-video="-rSXZjYUgKA"
+               style="background: url('https://img.youtube.com/vi/-rSXZjYUgKA/sddefault.jpg') no-repeat center;">
+               <img src="images/icons/play.svg" alt="" class="play__img">
+            </div>
+         </div>
       </section>
 
    </main>
@@ -438,7 +446,7 @@
             <div class="footer__social">
                <a href="https://vk.com/id220238869" class="footer__social-vk"><img src="images/icons/vk.svg" alt=""
                      class="footer__social-img"></a>
-               <a href="" class="footer__social-whatsapp"><img src="images/icons/tlg.svg" alt=""
+               <a href="https://tgtg.su/TMcosmetic" class="footer__social-whatsapp"><img src="images/icons/tlg.svg" alt=""
                      class="footer__social-img"></a>
                <a href="https://api.whatsapp.com/send?phone=79282816477&text=Здравствуйте%2C+у+меня+есть+вопрос"
                   class="footer__social-tlg"><img src="images/icons/whatsapp.svg" alt="" class="footer__social-img"></a>
@@ -448,13 +456,17 @@
    </footer>
 
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous" integrity=""
-      referrerpolicy="no-referrer"> </script>
-   <script src="js/lightbox-plus-jquery.min.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script async src="js/slick.js"></script>
+   <script async src="js/lightbox-plus-jquery.min.js" defer></script>
+   <script async src="js/video.js"></script>
 
-   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script src="js/slick.js"></script>
-   <script src="js/main.min.js"></script>
+
+   <script async src="js/main.min.js"></script>
 
 </body>
 
