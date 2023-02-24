@@ -187,7 +187,7 @@ ul.about__text-point {
 }
 .service__title {
    margin-bottom: 90px;
-   padding-top: 90px;
+   padding-top: 70px;
 }
 .service__inner {
    display: flex;
@@ -202,7 +202,7 @@ ul.about__text-point {
    box-shadow: 0px 0px 20px 0px rgba(163, 111, 176, 1);
    border-radius: 25px;
    padding: 30px 40px;
-   margin: 0 20px 90px;
+   margin: 0 20px 60px;
    transform: scale(1);
    transition: all 0.2s ease;
    &:hover {
@@ -374,7 +374,7 @@ ul.about__text-point {
 .section__reviews-3 {
    background: #fff;
    position: relative;
-   height: 90vh;
+   height: 70vh;
    img {
       max-width: 800px;
       width: 100%;
@@ -384,12 +384,12 @@ ul.about__text-point {
 }
 .reviews__inner-1 {
    right: 0px;
-   top: 0px;
+   top: 50%;
    position: absolute;
    max-width: 700px;
-   margin-left: auto;
    font-family: "Raleway", sans-serif;
    padding: 0px 50px 50px 20px;
+   transform: translateY(-50%);
 }
 .section__reviews-2 {
    background: #f7f7f7;
@@ -411,6 +411,60 @@ ul.about__text-point {
       padding: 50px 0 0 50px;
       width: 40%;
    }
+}
+.reviews__text-coach {
+   padding: 35px 0;
+   background: rgb(255, 255, 255);
+   background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(227, 222, 254, 1) 20%,
+      rgba(227, 222, 254, 1) 80%,
+      rgba(248, 248, 248, 1) 100%
+   );
+}
+.reviews__text-doctor {
+   background: rgb(255, 255, 255);
+   background: linear-gradient(
+      180deg,
+      rgba(248, 248, 248, 1) 0%,
+      rgba(227, 222, 254, 1) 20%,
+      rgba(227, 222, 254, 1) 80%,
+      rgba(255, 255, 255, 1) 100%
+   );
+}
+.card {
+   text-align: center;
+   width: 360px;
+   background-color: #f0f0f0;
+   -webkit-box-shadow: 0px 0px 20px 0px #a36fb0;
+   box-shadow: 0px 0px 20px 0px #a36fb0;
+   border-radius: 25px;
+   padding: 20px;
+   margin: 0px 10px 40px;
+   transform: scale(1);
+   transition: all 0.2s ease;
+   &:hover {
+      transform: scale(0.9);
+   }
+}
+.card h2 {
+   font-size: 18px;
+   font-weight: bold;
+   background-image: linear-gradient(to right, #ee00ff 0%, #fbff00 100%);
+   color: transparent;
+   -webkit-background-clip: text;
+}
+.card p {
+   font-size: 16px;
+   color: $text;
+}
+.grid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
 }
 
 .video3 {
