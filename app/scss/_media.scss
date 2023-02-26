@@ -161,6 +161,16 @@
          height: 500px;
       }
    }
+   .progress__item {
+      width: 50%;
+      & + & {
+         border-left: none;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+         border-left: 2px solid $purple;
+      }
+   }
    .service__item-title {
       padding-top: 30px;
    }
@@ -324,6 +334,18 @@
    }
    .home__right-1 {
       font-size: 28px;
+   }
+   .progress__item {
+      width: 100%;
+      & + & {
+         border-left: none;
+      }
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+         border-left: none;
+         border-bottom: 2px solid $purple;
+      }
    }
    .footer__copy {
       font-size: 18px;
